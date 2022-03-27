@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS buổi 7 - 8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-7">
+            <div class="card">
+                <div class="card-header text-center">Please input the array components in the following order : </div>
+                <div class="card-body">
+                    <h6>Enter integer:</h6>
+                    <input id="txtNum" type="text" placeholder="Enter the number here">
+                    <br>
+                    <br>
+
+                    <div class="alert alert-success">
+                        Your string's : <strong id="chuoi"></strong>
+                    </div>
+                    <button id="btn-Nhap" class="btn btn-success">Result</button>
+                    <br>
+                    <br>
+                    <button id="btn-Xoa" class="btn btn-success">Delete array</button>
+
+                </div>
+
+                <div class="card-footer">
+                    <div class="alert alert-success">
+                        Sum of all positive numbers is : <strong id="tongSoDuong"></strong>
+                    </div>
+                    <button id="btn-TinhTongSoDuong" class="btn btn-success" ; style="margin-left: 15rem;">Calculate sum
+                        of all positive
+                        numbers</button>
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="alert alert-success"> Result of counting positive numbers's : <strong
+                            id="countSoDuong"></strong>
+                    </div>
+                    <button id="btn-DemSoDuong" class="btn btn-success" ; style="margin-left: 15rem;">Count positive
+                        number</button>
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="alert alert-success">
+                        Smallest number in the array's: <strong id="soMin"></strong>
+                    </div>
+                    <button id="btn-TimSoNho" class="btn btn-success" ; style="margin-left: 15rem;">Find the smallest
+                        number</button>
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="alert alert-success">
+                        Result of the smallest positive number in the array's: <strong id="soMinDuong"></strong>
+                    </div>
+                    <button id="btn-TimSoDuongNho" class="btn btn-success" ; style="margin-left: 15rem;">Find the
+                        smallest positive number in the array's</button>
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="alert alert-success">
+                        The last even number in the
+                        array's : <strong id="soChanCuoi"></strong>
+                    </div>
+                    <button id="btn-TimLastChan" class="btn btn-success" ; style="margin-left: 15rem;">Find the last
+                        even number in the
+                        array</button>
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div>
+                        <input id="vitri1" placeholder="Enter the first value" type="text">
+                        <input id="vitri2" placeholder="Enter the second value" type="text">
+                        <br>
+                        <br>
+                        <button id="btn-DoiViTri" class="btn btn-success">Change</button>
+                        <br>
+                        <br>
+
+                        <div class="alert alert-success">
+                            Your new string's: <strong id="chuoiMoi"></strong>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div>
+                        <div class="alert alert-success">
+                            The arranged string's : <strong id="sapXep"></strong>
+                        </div>
+                        <button id="btn-SapXep" class="btn btn-success">Arrange</button>
+                        <br>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="alert alert-success">
+                            The first prime number's : <strong id="nguyenTo1"></strong>
+                        </div>
+                        <button id="btn-TimNguyenTo" class="btn btn-success" ; style="margin-left: 15rem;">Find the
+                            first prime number</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Input array of real numbers</div>
+            <div class="card-body">
+                <h6>Enter the real numbers</h6>
+                <input id="txtNum2" type="text" placeholder="">
+                <br>
+                <br>
+                <div class="alert alert-success">
+                    Your string's : <strong id="chuoi2"></strong>
+                </div>
+                <button id="btn-Nhap2" class="btn btn-success">Result</button>
+                <br>
+                <br>
+                <button id="btn-Xoa2" class="btn btn-success">Delete array</button>
+                <br>
+                <br>
+
+                <div class="card-footer">
+                    <div class="alert alert-success">
+                        The integers in the array's : <strong id="soNguyen"></strong>
+                    </div>
+                    <button id="btn-TimSoNguyen" class="btn btn-success" ; style="margin-left: 5rem;">Find
+                        integers</button>
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="alert alert-success">
+                        <strong id="soSanh"></strong>
+                        <br>
+                    </div>
+                    <button id="btn-SoSanh" class="btn btn-success" ; style="margin-left: 5rem;">Compare</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
